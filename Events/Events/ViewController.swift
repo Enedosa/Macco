@@ -27,6 +27,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func switchToggled(_ sender: UISwitch) {
+        if sender.isOn {
+            self.view.backgroundColor = .white
+        } else {
+            self.view.backgroundColor = .darkGray
+            //titleLabel.textColor = .systemTeal
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
