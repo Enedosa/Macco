@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func submitBtnClicked(_ sender: UIButton) {
+        let name = nameField.text ?? ""
+        titleLabel.text = "Welcome \(name)"
     }
     
     @IBAction func switchToggled(_ sender: UISwitch) {
