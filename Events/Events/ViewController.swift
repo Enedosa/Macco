@@ -28,5 +28,9 @@ class ViewController: UIViewController {
     
     @IBAction func switchToggled(_ sender: UISwitch) {
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        nameField.resignFirstResponder()
+    }
 }
 
